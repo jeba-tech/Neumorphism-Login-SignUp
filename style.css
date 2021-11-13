@@ -1,0 +1,266 @@
+
+/*Login form Section*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+      background-color: rgb(146, 109, 79);
+      font-family: 'PT Serif', serif;
+}
+.box{
+      width: 290px;
+      height: 430px;
+      position: fixed;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 40px 35px 35px 35px;
+      border-radius: 67px;
+      box-shadow: -5px 5px 27px #ffc670,-5px 5px 27px #fdc3c3;
+}
+form{
+      width: 90%;
+      padding: 35px 5px 0px 19px;
+
+}
+h1{
+      font-size: 33px;
+      color: #331806;
+      text-align: center;
+
+}
+
+form input{
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 22px 12px 22px 32px;
+}
+form input::placeholder{
+      color: rgb(255, 212, 133);
+}
+.user,.pass{
+      margin-bottom: 30px;
+      border-radius: 25px;
+      box-shadow: inset 8px 8px 8px #301902,inset -8px -8px 8px #d4b8b8;
+
+
+}
+
+
+.btn{
+      outline: none;
+      border: none;
+      cursor: pointer;
+      width: 60%;
+      margin-top: 18px;
+      margin-left: 65px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      background-color: #331806;
+      box-shadow: 3px 3px 8px #9e9d9d,-3px -3px 8px #ffebeb;
+}
+.btn:hover{
+      background-color: #f7a936;
+      color: #ffffff;
+}
+
+
+/*Sign Up form section*/
+
+.upbtn{
+     
+
+      outline: none;
+      border: none;
+      cursor: pointer;
+      width: 90%;
+      
+      margin-left: 5px;
+      margin-right: 50px;
+      margin-top: 1px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 900;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      background-color: #331806;
+      box-shadow: 3px 3px 8px #9e9d9d,-3px -3px 8px #ffebeb;
+}
+.upbtn:hover{
+      background-color: #f7a936;
+      color: #ffffff;
+}
+.upbox{
+      width: 290px;
+      height: 397px;
+      position: fixed;
+      
+      top: 55%;
+      left: 80%;
+      transform: translate(-50%,-50%);
+      padding: 3px 35px 200px 35px;
+      border-radius: 67px;
+      box-shadow: -5px 5px 27px #ffc670,-5px 5px 27px #fdc3c3;
+}
+.userup,.passup,.email{
+      margin-bottom: 27px;
+      border-radius: 25px;
+      box-shadow: inset 8px 8px 8px #301902,inset -8px -8px 8px #d4b8b8;
+
+
+}
+.uppbtn{
+      outline: none;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      
+      margin-left: 70px;
+     
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      background-color: #331806;
+      box-shadow: 3px 3px 8px #9e9d9d,-3px -3px 8px #ffebeb;
+}
+.uppbtn:hover{
+      background-color: #f7a936;
+      color: #ffffff;
+}
+
+
+/*nav bar section*/
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 223, 174);
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: rgb(255, 223, 174);
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+
+#login-form{
+      display:none;
+}
+#signup-form{
+      display:none;
+}
+
+
+/*animated text*/
+
+
+body {
+      font-family: "Archivo Black", sans-serif;
+      background: rgb(146, 109, 79);
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+    
+      height:550px;
+      justify-content: left;
+      align-items: left;
+    }
+    
+    .words {
+      color: rgb(212, 164, 124);
+      font-size: 0;
+      line-height: 1.3;
+    }
+    
+    .words span {
+      font-size: 5rem;
+      display: inline-block;
+      animation: move 3s ease-in-out infinite;
+    }
+    
+    @keyframes move {
+      0% {
+        transform: translate(-30%, 0);
+      }
+      50% {
+        text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+      }
+      100% {
+        transform: translate(30%, 0);
+      }
+    }
+    
+    .words span:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    
+    .words span:nth-child(3) {
+      animation-delay: 1s;
+    }
+    
+    .words span:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+    
+    .words span:nth-child(5) {
+      animation-delay: 2s;
+    }
+    
+    .words span:nth-child(6) {
+      animation-delay: 2.5s;
+    }
+    
+    .words span:nth-child(7) {
+      animation-delay: 3s;
+    }
+    
